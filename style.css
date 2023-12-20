@@ -41,7 +41,7 @@ body, * {
   /* opacity: 0; */
   background-color: #FED9ED;
   position: absolute;
-  bottom: -2px;
+  bottom: -15rem;
   left: 0;
   right: 0;
   transition: opacity 1s 1s;
@@ -55,4 +55,14 @@ body, * {
 .card__title {
   font-weight: 500;
   margin-bottom: .75rem;
+}
+
+.card__button {
+  text-decoration: none;
+  font-weight: 500;
+  color: #3081D0;
+}
+
+.card__button:hover {
+  text-decoration: underline;
 }
