@@ -121,3 +121,16 @@ body, * {
     overflow: hidden;
   }
 }
+
+/* media-query */
+
+@media screen and (max-width: 340px) {
+  .container {
+    margin-inline: 1rem;
+  }
+
+  .card__data {
+    width: 250px;
+    padding: 1rem;
+  }
+}
