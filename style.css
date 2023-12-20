@@ -21,3 +21,9 @@ body, * {
   display: grid;
   row-gap: 3.5rem;
 }
+
+.card__article {
+  position: relative;
+  overflow: hidden;
+}
+
