@@ -77,11 +77,47 @@ body, * {
   animation: remove-overflow 2s forwards;
 }
 
+.card__article:not(:hover) {
+  animation: show-overflow 2s forwards;
+}
+
+.card__article:not(:hover) .card__data {
+  animation: remove-data 1s forwards;
+}
+
 @keyframes show-data {
   50% {
     transform: translateY(-16rem);
   }
   100% {
     transform: translateY(-14rem);
+  }
+}
+
+@keyframes remove-overflow {
+  to {
+    overflow: initial;
+  }
+}
+
+@keyframes remove-data {
+  0% {
+    transform: translateY(-14rem);
+  }
+  50% {
+    transform: translateY(-16rem);
+  }
+  100% {
+    transform: translateY(.10rem);
+  }
+}
+
+@keyframes show-overflow {
+  0% {
+    overflow: initial;
+    pointer-events: none;
+  }
+  50% {
+    overflow: hidden;
   }
 }
