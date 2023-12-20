@@ -46,3 +46,13 @@ body, * {
   right: 0;
   transition: opacity 1s 1s;
 }
+
+.card__description {
+  display: block;
+  margin-bottom: .25rem;
+}
+
+.card__title {
+  font-weight: 500;
+  margin-bottom: .75rem;
+}
