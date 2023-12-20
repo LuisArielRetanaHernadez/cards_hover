@@ -66,3 +66,22 @@ body, * {
 .card__button:hover {
   text-decoration: underline;
 }
+
+.card__article:hover .card__data{
+  animation: show-data 1s forwards;
+  opacity: 1;
+  transition: opacity .3s;
+}
+
+.card__article:hover {
+  animation: remove-overflow 2s forwards;
+}
+
+@keyframes show-data {
+  50% {
+    transform: translateY(-16rem);
+  }
+  100% {
+    transform: translateY(-14rem);
+  }
+}
